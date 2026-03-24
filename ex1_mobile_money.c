@@ -1,11 +1,23 @@
-/* Name: Your Full Name */
-/* Student Number: Your Registration Number */
+/* Name: MUWONGE RONALD PAUL */
+/* Student Number: 25/U/BIE/01401/PE */
 
 #include <stdio.h>
 
-int main(void)
-{
-    /* Write your code here */
+int main() {
+    float amount, fee;
 
+    printf("enter the amount to be sent:");
+    scanf("%f"),&amount;
+    if (amount <=1000) {
+    fee =0.05*amount;
+    printf("the fee is: %.2f\n", fee);
+    } else if (amount <= 5000) {
+        fee = 0.04*amount;
+        printf("the amount is: %.2f\n", fee);
+    } else if (amount <= 10000) {
+        fee = 0.03*amount;
+        printf("the fee is : %.2f\n", fee);
+        
+    }
     return 0;
-}
+    } 
